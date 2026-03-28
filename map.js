@@ -12,7 +12,7 @@ const DECAY_TIME = 300000;
 const DECAY_INTERVAL = 10000; 
 
 // === SOCKET.IO CONNECTION ===
-const socket = io();
+const socket = io('https://ws.socketkill.com');
 
 socket.on('connect', () => {
     console.log('✅ Connected to kill stream');
