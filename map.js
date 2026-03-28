@@ -204,7 +204,7 @@ async function loadSystems() {
     try {
         updateLoadingStatus('Loading system coordinates...');
         
-        const response = await fetch('/map/data/systems.json');
+        const response = await fetch('data/systems.json');
         
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
